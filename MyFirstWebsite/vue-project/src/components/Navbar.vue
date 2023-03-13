@@ -3,43 +3,44 @@ const props = defineProps(["item"])
 </script>
 <template>
     <div class="wrapper">
-        <div class="logo">
-            mylog
-        </div>
-        <div class="navContent" v-for="navitem in item">
-            {{ navitem }}
+        <div class="logo">mylog</div>
+        <div class="contentWrapper">
+        <div class="navContent" v-for="navitem in item">{{ navitem }}</div>
         </div>
     </div>
 </template>
 <style scoped>
 .wrapper {
-    background-color: #bfa;
     display: flex;
-    width: 100%;
-    padding: px;
+    margin-top: 1em;
+    border: 2px solid grey;
+    border-radius: 10px;
 }
 .logo {
-background-color: red;
-width: 15%;
-text-align: center;
- color: white;
-  padding: 10px;
-  cursor:pointer;
-}
-.navContent {
-    box-sizing: content-box;
-    background-color: blue;
-    width: 10%;
-    flex: auto;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px;
     cursor:pointer;
-    margin-left: 1em ;
+    margin-left: .5em;
+    font-size: 1.5em;
+    
 }
-.navContent:hover {
-      box-shadow: 10px 10px 5px grey;
-      color:#bfa;
-      transform: scale(1.9);
+.contentWrapper {
+    display: flex;
+    margin-left: 3em;
+    font-size: 1.5em;
+    flex: auto;
+    justify-content: flex-end;
+    margin-right: .5em;
 }
+.navContent {
+    width: 3em;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    cursor:pointer;
+    margin-left: 10px;
+
+}
+
 </style>
