@@ -3,7 +3,7 @@ const props = defineProps(["item"])
 </script>
 <template>
     <div class="wrapper">
-        <div class="logo">mylog</div>
+        <div class="logo">Mylog</div>
         <div class="contentWrapper">
         <div class="navContent" v-for="navitem in item">{{ navitem }}</div>
         </div>
@@ -13,11 +13,11 @@ const props = defineProps(["item"])
 .wrapper {
     display: flex;
     margin-top: 1em;
-    border: 2px solid grey;
-    border-radius: 10px;
+    padding-bottom: 1em;
+    border-bottom: 1px solid black;
 }
 .logo {
-         text-align: center;
+    text-align: center;
     color: rgb(0, 0, 0);
     padding: 10px;
     cursor:pointer;
@@ -32,6 +32,7 @@ const props = defineProps(["item"])
     flex: auto;
     justify-content: flex-end;
     margin-right: .5em;
+    flex-wrap: wrap;
 }
 .navContent {
     width: 3em;
