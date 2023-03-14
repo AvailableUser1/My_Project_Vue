@@ -3,7 +3,9 @@ const props = defineProps(["item"])
 </script>
 <template>
     <div class="wrapper">
-        <div class="logo">Mylog</div>
+        <div class="logo">
+            <img src="../assets/baobao.jpg" alt="爆爆">
+        </div>
         <div class="contentWrapper">
         <div class="navContent" v-for="navitem in item">{{ navitem }}</div>
         </div>
@@ -12,8 +14,6 @@ const props = defineProps(["item"])
 <style scoped>
 .wrapper {
     display: flex;
-    margin-top: 1em;
-    padding-bottom: 1em;
     border-bottom: 1px solid black;
 }
 .logo {
@@ -21,15 +21,21 @@ const props = defineProps(["item"])
     color: rgb(0, 0, 0);
     padding: 10px;
     cursor:pointer;
-    margin-left: .5em;
+    margin-left: 3em;
     font-size: 1.5em;
-    
+}
+img {
+    height: 70px;
+}
+img:hover {
+    transform: scale(1.5);
 }
 .contentWrapper {
     display: flex;
     margin-left: 3em;
     font-size: 1.5em;
     flex: auto;
+    align-items: center;
     justify-content: flex-end;
     margin-right: .5em;
     flex-wrap: wrap;
@@ -41,7 +47,5 @@ const props = defineProps(["item"])
     padding: 10px;
     cursor:pointer;
     margin-left: 10px;
-
 }
-
 </style>

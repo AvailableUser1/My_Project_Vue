@@ -26,7 +26,7 @@ const sideContentobj = {
     <div class="nav">
     <Navbar :item="navContentobj"></Navbar>
     </div>
-    <div class="main">
+    <div class="main">  
     <div class="sidebar">
     <Sidebar :sideItem="sideContentobj"> </Sidebar>
     </div>

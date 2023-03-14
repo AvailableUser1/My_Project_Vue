@@ -21,12 +21,12 @@ const props = defineProps(["sideItem"])
     box-sizing: border-box;
     cursor: pointer;
     padding: 10px;
-    padding-left: 50px;
-    margin: 10px;
+    padding-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
     width: 100%;
     font-size: 30px;
-/* background-color: violet; */
-
 }
 .sideContent:hover {
     transform: scale(1.3);
