@@ -17,7 +17,7 @@ const props = defineProps(["item"])
     border-radius: 10px;
 }
 .logo {
-    text-align: center;
+         text-align: center;
     color: rgb(0, 0, 0);
     padding: 10px;
     cursor:pointer;
