@@ -12,7 +12,7 @@
 <style  scoped>
 footer {
     padding-top: 20px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     text-align: center;
     border-top: 1px solid black;
 }
