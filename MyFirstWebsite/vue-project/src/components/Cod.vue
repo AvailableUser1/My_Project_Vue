@@ -28,9 +28,11 @@ body {
     margin: 0;
 }
 h1 {
-    padding-top: 45vh;
+    font-size: 50px;
+    line-height: 100vh;
+    margin: 0;
 }
-h1:hover {
+div:hover {
     color: white;
 }
 #grid {

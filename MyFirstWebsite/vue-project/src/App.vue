@@ -12,7 +12,7 @@ const navContentobj = {
     forth: "翻译",
     fifth: "猫"
 }
-let show = ref("false");
+
 </script>
 <template >
     
