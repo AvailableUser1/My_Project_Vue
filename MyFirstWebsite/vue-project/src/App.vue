@@ -29,7 +29,6 @@ const navContentobj = {
     <div class="footer">
         <Myfooter></Myfooter>
     </div>
-
 </template>
 <style scoped>
 
