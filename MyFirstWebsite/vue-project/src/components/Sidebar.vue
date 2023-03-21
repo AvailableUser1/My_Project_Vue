@@ -4,7 +4,11 @@ const props = defineProps(["sideItem"])
 
 <template>
     <div class="wrapper">
-        <div class="sideContent" v-for="item in sideItem">{{ item }}</div>
+            <div class="sideContent" >{{ props.sideItem.first }}</div>
+            <div class="sideContent" >{{ props.sideItem.second }}</div>
+            <div class="sideContent" >{{ props.sideItem.third }}</div>
+            <div class="sideContent" >{{ props.sideItem.forth }}</div>
+            <div class="sideContent" >{{ props.sideItem.fifth }}</div>
     </div>
 </template>
 

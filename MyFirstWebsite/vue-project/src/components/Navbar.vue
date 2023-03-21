@@ -7,7 +7,11 @@ const props = defineProps(["item"])
             <img src="../assets/baobao.jpg" alt="爆爆">
         </div>
         <div class="contentWrapper">
-        <div class="navContent" v-for="navitem in item">{{ navitem }}</div>
+        <div class="navContent" >{{ props.item.first }}</div>
+        <div class="navContent" >{{ props.item.second }}</div>
+        <div class="navContent" >{{ props.item.third }}</div>
+        <div class="navContent" >{{ props.item.forth }}</div>
+        <div class="navContent" >{{ props.item.fifth }}</div>
         </div>
     </div>
 </template>
@@ -15,6 +19,9 @@ const props = defineProps(["item"])
 .wrapper {
     display: flex;
     border-bottom: 1px solid black;
+    background-color: white;
+    
+    width: 100%;
 }
 .logo {
     text-align: center;

@@ -20,16 +20,21 @@ const navContentobj = {
         <Navbar :item="navContentobj">
         </Navbar>
     </div>
+    <div class="codFront" >
+            <Cod></Cod>
+        </div>
     <div class="mian" >
         <Main></Main>
     </div>
-    <div class="codFront" >
-        <Cod></Cod>
-    </div>
+    
     <div class="footer">
         <Myfooter></Myfooter>
     </div>
 </template>
 <style scoped>
-
+.nav {
+    position:sticky;
+    top: 0;
+    left: 0;
+}
 </style>

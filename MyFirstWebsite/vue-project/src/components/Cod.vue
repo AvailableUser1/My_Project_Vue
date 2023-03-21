@@ -1,5 +1,4 @@
 <template>
-    <div class="title">标题</div>
     <div id="grid">
         <div class="me">
             <h1>我</h1>
