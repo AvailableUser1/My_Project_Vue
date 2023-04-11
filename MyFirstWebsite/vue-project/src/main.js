@@ -1,17 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import './assets/global.css'
-import { createRouter, createWebHashHistory } from 'vue-router'
-import Zhengwen from './components/Zhengwen.vue'
-const routes = [
-    { path: '/zhengwen', component: Zhengwen },
-]
-
-const router = createRouter({
-  // 4. 内部提供了 history 模式的实现。为了简单起见，我们在这里使用 hash 模式。
-    history: createWebHashHistory(),
-  routes, // `routes: routes` 的缩写
-})
+import router from './routes/index'
 
 createApp(App).use(router).mount('#app')
 

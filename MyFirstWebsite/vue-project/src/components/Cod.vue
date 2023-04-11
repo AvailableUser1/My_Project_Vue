@@ -1,10 +1,15 @@
 <template>
     <div id="grid">
-        <div class="me">
-            <h1>我</h1>
-        </div>
+        <RouterLink to="/me">
+            <div class="me">
+                <h1>我</h1>
+            </div>
+        </RouterLink>
+        
         <div class="fit">
-            <h1>健身</h1>
+            <RouterLink to="/fit">
+                <h1>健身</h1>
+            </RouterLink>
         </div>
         <div class="handcraft">
             <h1>手工</h1>
@@ -24,13 +29,14 @@
 
 <style  scoped>
 body {
-    margin: 0;
+    margin: 0;   
 }
 h1 {
     font-size: 50px;
     line-height: 100vh;
     margin: 0;
 }
+
 div:hover {
     color: white;
 }
@@ -43,6 +49,9 @@ div:hover {
     background: black;
     text-align: center;
     cursor: pointer;
+}
+#grid:hover {
+    background: white
 }
 
 :where(.me, .fit, .handcraft, .translate, .cat) {
@@ -73,5 +82,12 @@ div:hover {
 .title{
     border-bottom: 1px solid black;
     position: sticky;
+}
+a{
+    text-decoration: none; 
+}
+a:visited {
+    color: inherit;
+    text-decoration: none;
 }
 </style>

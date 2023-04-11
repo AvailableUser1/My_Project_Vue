@@ -1,5 +1,6 @@
 <script setup>
 const props = defineProps(["sideItem"])
+
 </script>
 
 <template>
@@ -14,12 +15,12 @@ const props = defineProps(["sideItem"])
 
 <style  scoped>
 .wrapper{
-    margin-top: 30px;
     display: flex;
     flex-flow: column;
     height: 100%;
     /* background-color: aquamarine; */
     border-right: 2px solid black;
+    padding-top: 2em;
 }
 .sideContent {
     box-sizing: border-box;

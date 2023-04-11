@@ -4,11 +4,13 @@ const props = defineProps(["item"])
 <template>
     <div class="wrapper">
         <div class="logo">
-            <img src="../assets/baobao.jpg" alt="爆爆">
+        <RouterLink to="/"><img src="../assets/baobao.jpg" alt="爆爆"></RouterLink>
+        <span>{{props.item.span}}</span>
         </div>
+        <div class="home">{{ props.item.home }}</div>
         <div class="contentWrapper">
-        <div class="navContent" >{{ props.item.first }}</div>
-        <div class="navContent" >{{ props.item.second }}</div>
+        <RouterLink to="/me"><div class="navContent" >{{ props.item.first }}</div></RouterLink>
+        <RouterLink to="/fit"><div class="navContent" >{{ props.item.second }}</div></RouterLink>
         <div class="navContent" >{{ props.item.third }}</div>
         <div class="navContent" >{{ props.item.forth }}</div>
         <div class="navContent" >{{ props.item.fifth }}</div>
@@ -20,8 +22,14 @@ const props = defineProps(["item"])
     display: flex;
     border-bottom: 1px solid black;
     background-color: white;
-    
     width: 100%;
+    
+}
+.home {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+
 }
 .logo {
     text-align: center;
@@ -30,6 +38,13 @@ const props = defineProps(["item"])
     cursor:pointer;
     margin-left: 3em;
     font-size: 1.5em;
+    display: flex;
+    align-items:end;
+}
+span {
+    padding-left: 1em;
+    font-size: .8em;
+    cursor:default;
 }
 img {
     height: 70px;
@@ -54,5 +69,17 @@ img:hover {
     padding: 10px;
     cursor:pointer;
     margin-left: 10px;
+}
+.navContent:hover {
+    transform: scale(1.5);
+
+}
+
+a{
+    text-decoration: none; 
+}
+a:visited {
+    color: inherit;
+    text-decoration: none;
 }
 </style>
